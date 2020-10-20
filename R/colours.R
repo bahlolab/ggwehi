@@ -1,21 +1,21 @@
 #' @export
-wehi_yellow     <- '#ECE953'
+wehi_yellow <- '#ECE953'
 #' @export
-wehi_green      <- '#49A942'
+wehi_green <- '#49A942'
 #' @export
-wehi_blue       <- '#2372B9'
+wehi_blue <- '#2372B9'
 #' @export
-wehi_grey       <- '#58595B'
+wehi_grey <- '#58595B'
 #' @export
-wehi_orange     <- '#F37520'
+wehi_orange <- '#F37520'
 #' @export
-wehi_red        <- '#E01545'
+wehi_red <- '#E01545'
 #' @export
-wehi_purple     <- '#7D489C'
+wehi_purple <- '#7D489C'
 #' @export
 wehi_light_blue <- '#00BCE7'
 #' @export
-wehi_teal       <- '#00A99F'
+wehi_teal <- '#00A99F'
 
 #' @export
 wehi_primary <-
