@@ -24,7 +24,7 @@ diamonds %>%
   ggtitle('Diamonds cut, carat and price')
 ```
 
-<img src="README_figs/README-unnamed-chunk-3-1.png" width="672" />
+<img src="README_figs/README-examples-1.png" width="672" />
 
 ``` r
 diamonds %>% 
@@ -34,18 +34,18 @@ diamonds %>%
   ggtitle('Diamonds clarity by cut')
 ```
 
-<img src="README_figs/README-unnamed-chunk-3-2.png" width="672" />
+<img src="README_figs/README-examples-2.png" width="672" />
 
 ### Scale functions
 
-  - `scale_fill_wehi`
-  - `scale_colour_wehi`
-  - `scale_fill_wehi_ordered`
-  - `scale_colour_wehi_ordered`
-  - `scale_fill_wehi_continuous`
-  - `scale_fill_wehi_continuous_c`
-  - `scale_colour_wehi_continuous`
-  - `scale_colour_wehi_continuous_c`
+  - `scale_fill_wehi()`
+  - `scale_colour_wehi()`
+  - `scale_fill_wehi_ordered()`
+  - `scale_colour_wehi_ordered()`
+  - `scale_fill_wehi_continuous()`
+  - `scale_colour_wehi_continuous()`
+  - `scale_fill_wehi_continuous_c()`
+  - `scale_colour_wehi_continuous_c()`
 
 ### Palettes
 
@@ -53,34 +53,34 @@ diamonds %>%
 scales::show_col(ggwehi::wehi_primary)
 ```
 
-<img src="README_figs/README-unnamed-chunk-4-1.png" width="672" />
+<img src="README_figs/README-palettes-1.png" width="672" />
 
 ``` r
 scales::show_col(ggwehi::wehi_secondary)
 ```
 
-<img src="README_figs/README-unnamed-chunk-4-2.png" width="672" />
+<img src="README_figs/README-palettes-2.png" width="672" />
 
 ``` r
 scales::show_col(ggwehi::wehi_extended)
 ```
 
-<img src="README_figs/README-unnamed-chunk-4-3.png" width="672" />
+<img src="README_figs/README-palettes-3.png" width="672" />
 
 ``` r
 scales::show_col(ggwehi::wehi_ordered)
 ```
 
-<img src="README_figs/README-unnamed-chunk-4-4.png" width="672" />
+<img src="README_figs/README-palettes-4.png" width="672" />
 
 ``` r
 scales::show_col(ggwehi:::wehi_continous()(seq(0,1,1/9)))
 ```
 
-<img src="README_figs/README-unnamed-chunk-4-5.png" width="672" />
+<img src="README_figs/README-palettes-5.png" width="672" />
 
 ``` r
 scales::show_col(ggwehi:::wehi_continous_c()(seq(0,1,1/9)))
 ```
 
-<img src="README_figs/README-unnamed-chunk-4-6.png" width="672" />
+<img src="README_figs/README-palettes-6.png" width="672" />
