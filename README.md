@@ -45,7 +45,7 @@ diamonds %>%
   - `scale_fill_wehi_continuous`
   - `scale_fill_wehi_continuous_c`
   - `scale_colour_wehi_continuous`
-  - `scale_color_wehi_continuous_c`
+  - `scale_colour_wehi_continuous_c`
 
 ### Palettes
 
