@@ -11,6 +11,11 @@ library(tidyverse)
 
 ## `ggwehi`:  Colour scales for `ggplot2` based on the WEHI colour palette
 
+### Installation
+```{r, eval=FALSE}
+devtools::install_github("jemunro/ggwehi")
+```
+
 ### Examples
 ```{r}
 library(tidyverse)

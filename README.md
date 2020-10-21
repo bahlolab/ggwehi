@@ -3,6 +3,12 @@
 
 ## `ggwehi`: Colour scales for `ggplot2` based on the WEHI colour palette
 
+### Installation
+
+``` r
+devtools::install_github("jemunro/ggwehi")
+```
+
 ### Examples
 
 ``` r
@@ -18,7 +24,7 @@ diamonds %>%
   ggtitle('Diamonds cut, carat and price')
 ```
 
-<img src="README_figs/README-unnamed-chunk-2-1.png" width="672" />
+<img src="README_figs/README-unnamed-chunk-3-1.png" width="672" />
 
 ``` r
 diamonds %>% 
@@ -28,7 +34,7 @@ diamonds %>%
   ggtitle('Diamonds clarity by cut')
 ```
 
-<img src="README_figs/README-unnamed-chunk-2-2.png" width="672" />
+<img src="README_figs/README-unnamed-chunk-3-2.png" width="672" />
 
 ### Scale functions
 
@@ -47,34 +53,34 @@ diamonds %>%
 scales::show_col(ggwehi::wehi_primary)
 ```
 
-<img src="README_figs/README-unnamed-chunk-3-1.png" width="672" />
+<img src="README_figs/README-unnamed-chunk-4-1.png" width="672" />
 
 ``` r
 scales::show_col(ggwehi::wehi_secondary)
 ```
 
-<img src="README_figs/README-unnamed-chunk-3-2.png" width="672" />
+<img src="README_figs/README-unnamed-chunk-4-2.png" width="672" />
 
 ``` r
 scales::show_col(ggwehi::wehi_extended)
 ```
 
-<img src="README_figs/README-unnamed-chunk-3-3.png" width="672" />
+<img src="README_figs/README-unnamed-chunk-4-3.png" width="672" />
 
 ``` r
 scales::show_col(ggwehi::wehi_ordered)
 ```
 
-<img src="README_figs/README-unnamed-chunk-3-4.png" width="672" />
+<img src="README_figs/README-unnamed-chunk-4-4.png" width="672" />
 
 ``` r
 scales::show_col(ggwehi:::wehi_continous()(seq(0,1,1/9)))
 ```
 
-<img src="README_figs/README-unnamed-chunk-3-5.png" width="672" />
+<img src="README_figs/README-unnamed-chunk-4-5.png" width="672" />
 
 ``` r
 scales::show_col(ggwehi:::wehi_continous_c()(seq(0,1,1/9)))
 ```
 
-<img src="README_figs/README-unnamed-chunk-3-6.png" width="672" />
+<img src="README_figs/README-unnamed-chunk-4-6.png" width="672" />
