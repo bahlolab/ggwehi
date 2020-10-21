@@ -1,16 +1,23 @@
 Package: ggwehi
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Colour scales for ggplot2 based on the WEHI colour palette
 Version: 0.1.0
-Author: Who wrote it
+Authors@R: 
+    person(given = "Jacob",
+           family = "Munro",
+           role = c("aut", "cre"),
+           email = "munro.j@wehi.edu.au",
+           comment = c(ORCID = "0000-0002-2751-0989"))
 Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Description: Colour scales for ggplot2 based on the WEHI colour palette
+License: GPLv2
 Encoding: UTF-8
 LazyData: true
+ByteCompile: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Imports: 
     ggplot2,
-    scales
+    scales,
+    rlang,
+    stringr

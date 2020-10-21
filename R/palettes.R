@@ -4,9 +4,9 @@ wehi_pal <- function(n) {
             n >= 0)
 
   if (n > length(wehi_extended)) {
-    rlang::warn(str_c('The maximum number of colours for wehi_pal (',
-                      length(wehi_extended),
-                      ') has been exceeded.'))
+    rlang::warn(stringr::str_c('The maximum number of colours for wehi_pal (',
+                               length(wehi_extended),
+                               ') has been exceeded.'))
   }
   pal <- unname(wehi_extended[seq_len(min(n, length(wehi_extended)))])
   return(pal)
@@ -17,7 +17,7 @@ wehi_ordered_pal <- function(n) {
             n >= 0)
 
   if (n > length(wehi_ordered)) {
-    rlang::warn(str_c('The maximum number of colours for wehi_ordered_pal (',
+    rlang::warn(stringr::str_c('The maximum number of colours for wehi_ordered_pal (',
                       length(wehi_ordered),
                       ') has been exceeded.'))
   }
@@ -25,7 +25,7 @@ wehi_ordered_pal <- function(n) {
   return(pal)
 }
 
-wehi_continous <- function(direction, n=1000) {
+wehi_continous_c <- function(direction=1, n=1000) {
   stopifnot(rlang::is_scalar_integerish(direction))
   if (direction == -1) {
     pal <- colorRampPalette(c(wehi_yellow, wehi_grey, wehi_blue))(n)
@@ -36,7 +36,7 @@ wehi_continous <- function(direction, n=1000) {
   function(x) { ramp2(pal, x) }
 }
 
-wehi_continous2 <- function(direction, n=1000) {
+wehi_continous <- function(direction=1, n=1000) {
   stopifnot(rlang::is_scalar_integerish(direction))
   if (direction == -1) {
     pal <- colorRampPalette(c(wehi_yellow, wehi_green, wehi_blue))(n)

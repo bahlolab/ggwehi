@@ -1,0 +1,54 @@
+---
+output: rmarkdown::github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE, message=FALSE}
+knitr::opts_chunk$set(collapse=TRUE, comment="##", fig.retina=2, fig.path = "README_figs/README-")
+library(tidyverse)
+```
+
+## `ggwehi`:  Colour scales for `ggplot2` based on the WEHI colour palette
+
+### Examples
+```{r}
+library(tidyverse)
+library(ggwehi)
+set.seed(1)
+diamonds %>% 
+  sample_n(5000) %>% 
+  ggplot(aes(x = cut, y = price, col = carat)) +
+  geom_jitter(height = 0) + 
+  geom_boxplot(fill = NA, outlier.colour = NA) +
+  scale_colour_wehi_continuous() +
+  ggtitle('Diamonds cut, carat and price')
+diamonds %>% 
+  ggplot(aes(x = cut, fill = clarity)) +
+  geom_bar() +
+  scale_fill_wehi() +
+  ggtitle('Diamonds clarity by cut')
+```
+
+### Scale functions
+* `scale_fill_wehi`
+* `scale_colour_wehi`
+* `scale_fill_wehi_ordered`
+* `scale_colour_wehi_ordered`
+* `scale_fill_wehi_continuous`
+* `scale_fill_wehi_continuous_c`
+* `scale_colour_wehi_continuous`
+* `scale_color_wehi_continuous_c`
+
+### Palettes
+```{r}
+scales::show_col(ggwehi::wehi_primary)
+scales::show_col(ggwehi::wehi_secondary)
+scales::show_col(ggwehi::wehi_extended)
+scales::show_col(ggwehi::wehi_ordered)
+scales::show_col(ggwehi:::wehi_continous()(seq(0,1,1/9)))
+scales::show_col(ggwehi:::wehi_continous_c()(seq(0,1,1/9)))
+```
+
+
+
