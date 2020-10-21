@@ -8,7 +8,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "munro.j@wehi.edu.au",
            comment = c(ORCID = "0000-0002-2751-0989"))
-Maintainer: The package maintainer <yourself@somewhere.net>
+Maintainer: Jacob Munro <munro.j@wehi.edu.au>
 Description: Colour scales for ggplot2 based on the WEHI colour palette
 License: GPLv2
 Encoding: UTF-8
