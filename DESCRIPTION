@@ -20,4 +20,6 @@ Imports:
     ggplot2,
     scales,
     rlang,
-    stringr
+    stringr,
+    colorspace,
+    shades
