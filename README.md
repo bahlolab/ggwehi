@@ -6,7 +6,7 @@
 ### Installation
 
 ``` r
-devtools::install_github("jemunro/ggwehi")
+devtools::install_github("bahlolab/ggwehi")
 ```
 
 ### Examples
