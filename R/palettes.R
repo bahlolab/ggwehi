@@ -18,7 +18,7 @@ wehi_paired_pal <- function(n) {
 
   if (n > length(wehi_paired)) {
     rlang::warn(stringr::str_c('The maximum number of colours for wehi_paired (',
-                               length(wehi_ordered),
+                               length(wehi_paired),
                                ') has been exceeded.'))
   }
   pal <- unname(wehi_paired[seq_len(min(n, length(wehi_paired)))])
