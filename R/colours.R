@@ -2,26 +2,29 @@
 #' @importFrom magrittr "%>%"
 
 #' @export
-wehi_yellow <- '#ECE953'
+wehi_yellow     <- '#ECE953'
 #' @export
-wehi_green <- '#49A942'
+wehi_green      <- '#49A942'
 #' @export
-wehi_blue <- '#2372B9'
+wehi_blue       <- '#2372B9'
 #' @export
-wehi_grey <- '#58595B'
+wehi_grey       <- '#58595B'
 #' @export
-wehi_orange <- '#F37520'
+wehi_orange     <- '#F37520'
 #' @export
-wehi_red <- '#E01545'
+wehi_red        <- '#E01545'
 #' @export
-wehi_purple <- '#7D489C'
+wehi_purple     <- '#7D489C'
 #' @export
 wehi_light_blue <- '#00BCE7'
 #' @export
-wehi_teal <- '#00A99F'
+wehi_teal       <- '#00A99F'
 
-wehi_yellow_lighter <- colorspace::lighten(wehi_yellow, amount = 0.25) %>% shades::saturation(values = 1)
-wehi_blue_darker <- colorspace::darken(wehi_blue, amount = 0.50)
+wehi_yellow_lighter <-
+  colorspace::lighten(wehi_yellow, amount = 0.25) %>%
+  shades::saturation(values = 1)
+wehi_blue_darker <-
+  colorspace::darken(wehi_blue, amount = 0.50)
 
 #' @export
 wehi_primary <-
@@ -53,12 +56,14 @@ wehi_extended <-
 wehi_extended_dark <-
   wehi_extended %>%
   shades::saturation(values = 1) %>%
+  as.character() %>%
   colorspace::darken(amount = 0.20)
 
 #' @export
 wehi_extended_light <-
   wehi_extended %>%
   shades::saturation(values = 1) %>%
+  as.character() %>%
   colorspace::lighten(amount = 0.35)
 
 #' @export

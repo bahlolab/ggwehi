@@ -39,3 +39,4 @@ ramp2 <- function(pal, x) {
   i <- 1L + as.integer(round(x * (length(pal) - 1)))
   pal[i]
 }
+

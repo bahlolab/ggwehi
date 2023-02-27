@@ -50,3 +50,4 @@ scale_color_wehi_continuous <- function (..., aesthetics = "colour", direction =
   ggplot2::continuous_scale(aesthetics, "wehi_continuous", wehi_continous(direction),
                             na.value = na.value, guide = guide, ...)
 }
+
